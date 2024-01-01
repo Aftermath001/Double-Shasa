@@ -1,12 +1,40 @@
 import React from 'react'
+import { useState } from 'react';
 import './navbar.css'
+import {Link, NavLink} from 'react-router-dom'
+import Logo from '../images/logo.png'
+import { BsJustify } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
+
+import {links} from '../data'
 const Navbar = () => {
+  const [isNavShowing, setIsNavShowing] = useState(false);
   return (
    <nav>
         <div className="container nav_container">
-            logo
-            nav links
-            nav buttons
+          <Link to="/" className='logo'>
+            <img src={Logo} alt='Nav Logo'/>
+          </Link>
+           <ul className={`nav_links ${isNavShowing ? 'show_nav' :
+           'hide_Nav'} `}>
+            {
+               links.map(({name, path}, index) => {
+                return (
+                  <li>
+                    <NavLink to={path} className={({isActive})=> isActive ? 'active-nav':''}>{name}</NavLink>
+                  </li>
+                )
+               })
+            }
+
+           </ul>
+            
+           <button className='nav_toogle-btn' onClick={() => setIsNavShowing
+          (!isNavShowing)}>
+            {
+              isNavShowing ? <IoMdClose/>: <BsJustify />
+            }
+           </button>
         </div>
    </nav>
   )
