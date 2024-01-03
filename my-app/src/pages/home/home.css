@@ -46,4 +46,27 @@
 .homepic{
     border-radius: 20px;
     padding-right: 5rem;
+    
 }
+/********** PROGRAMS ***********/
+
+.programs{
+    margin-top: 4rem;
+}
+.programs_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+ .programs_program a {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .prgrams_program:hover a {
+    background: var(--color-secondary);
+    color:var(--color-gray-600) ;
+ }
