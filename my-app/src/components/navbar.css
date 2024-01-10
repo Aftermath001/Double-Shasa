@@ -1,7 +1,7 @@
 nav{
     height: 5rem;
     width: 100vw;
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
     display: grid;
     place-items: center;
     position: fixed;
@@ -61,6 +61,7 @@ nav{
     transform: rotateX(90deg);
     opacity: 0;
     transform-origin: top;
+    background: none;
 }
 .nav_links li:nth-child(2){
     animation-delay: 200ms;
