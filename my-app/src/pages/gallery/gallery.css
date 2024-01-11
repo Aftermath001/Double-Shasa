@@ -1,0 +1,31 @@
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery_container article{
+    border: 1rem solid transparent;
+    transition: var(--transition);
+}
+.gallery_container article:hover {
+    border-color: var(--color-gray-500);
+}
+
+/* MEDIA QUERIES (Medium Screens) */
+@media screen and (max-width:1024px) {
+    .gallery_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .gallery_container article{
+        border: 0;
+    }
+}
+
+/* MEDIA QUERIES (Small Screens) */
+@media screen and (max-width:1024px) {
+    .gallery_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    
+    }
+}

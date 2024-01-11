@@ -16,10 +16,6 @@ export const links = [
     {
         name:"  Contact",
         path: '/contact'
-    },
-    {
-        name:"Notfound",
-        path: '/notfound'
     }
 ]
 

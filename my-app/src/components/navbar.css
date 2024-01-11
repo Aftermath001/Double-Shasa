@@ -108,7 +108,7 @@ nav{
         flex-direction: column;
         gap: 0;
     }
-    .active-nav{
+    .active-nav, .active-nav::after{
         display: none;
     }
     .nav_links li{
