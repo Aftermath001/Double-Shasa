@@ -1,11 +1,11 @@
 nav{
     height: 5rem;
     width: 100vw;
-    /* background: var(--color-primary); */
+    background: var(--color-primary);
     display: grid;
     place-items: center;
     position: fixed;
-    top: o;
+    top: 0;
     left: 0;
     z-index: 99;
 
@@ -57,7 +57,7 @@ nav{
 .nav_links li{
     height: 4rem;
     width: 100%;
-    box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.5);
+    /* box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.5); */
     animation: navAnimation 600ms ease forwards;
     transform: rotateX(90deg);
     opacity: 0;

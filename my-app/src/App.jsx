@@ -6,6 +6,7 @@ import Gallery from './pages/gallery/Gallery'
 import Notfound from './pages/notfound/Notfound'
 import Contact from './pages/contact/Contact'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 const App = () => {
   return (
    <div>
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="*" exact element={<Notfound/>} />
        
       </Routes>
-      
+      <Footer/>
 
    </div>
      
